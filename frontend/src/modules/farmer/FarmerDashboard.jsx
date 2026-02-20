@@ -1,7 +1,24 @@
 function FarmerDashboard() {
   return (
-    <div style={{ padding: "40px" }}>
-      <h2>Farmer Dashboard</h2>
+    <div>
+      <h2 className="text-2xl font-bold mb-6">Farmer Overview</h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="bg-white p-6 rounded-lg shadow">
+          <h3 className="text-gray-500">Active Harvests</h3>
+          <p className="text-3xl font-bold text-green-600">4</p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow">
+          <h3 className="text-gray-500">Readiness Score</h3>
+          <p className="text-3xl font-bold text-blue-600">78%</p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg shadow">
+          <h3 className="text-gray-500">Cluster Participation</h3>
+          <p className="text-3xl font-bold text-purple-600">2</p>
+        </div>
+      </div>
     </div>
   );
 }
